@@ -1,10 +1,12 @@
 package main
 
+import "fmt"
+
 func main() {
 	cards := newDeck() //slices
+	fmt.Println(cards.convertDeck2String())
 
-	hand, remainingCards := deal(cards, 2)
-	hand.print()
-	remainingCards.print()
+	// greeting := "Hi there!"
+	// fmt.Println([]byte(greeting))
 
 }
